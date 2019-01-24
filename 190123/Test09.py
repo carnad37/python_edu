@@ -40,6 +40,7 @@ while(True):
     #각각의 경우를 시행
     if(select==1):
         res = plus(num01,num02)
+
         print("Add :",res)
     elif(select==2):
         res = minus(num01,num02)
