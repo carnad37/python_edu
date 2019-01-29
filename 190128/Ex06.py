@@ -7,4 +7,3 @@ alist = list(aValues)
 print(alist)
 #keys()와 마찬가지로 리스트화가능
 #다만 자료형은 dict_values이다.
-
