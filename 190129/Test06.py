@@ -6,7 +6,7 @@ New_product_Vals =list(New_product.values())
 for i in range(0,len(New_product_keys),1):
     icecream[New_product_keys[i]] = New_product_Vals[i]
 print(icecream)
-
+#user = {"apple":"orange","chair":"desk","mouse":"keyboard","person":"pocket"}
 
 
 
