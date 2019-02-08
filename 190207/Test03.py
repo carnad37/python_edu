@@ -1,5 +1,6 @@
 infile = open("d:\\hhs2\\file\\sample.txt",'r')
 outfile = open("d:\\hhs2\\file\\result.txt",'w')
+
 sum = 0
 counter = 0
 

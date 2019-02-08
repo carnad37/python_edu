@@ -4,8 +4,9 @@ sum_List = []
 while True:
     line = infile.readline()
     line = line.strip('\n')
-    if not line:
-        break
+    #양쪽의 빈칸이나 띄어쓰기 넘기기 등등 빈칸을 모조리 컷해줌.
+    if not line: break
+    #
     sum_List.append(line)
 infile.close()
 #sum_List에 각각의 행을 저장함. \n은 제거.
