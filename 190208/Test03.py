@@ -1,7 +1,7 @@
 #딕셔너리에 studentScore를 저장.
 
-def txt_toDic(url):
-    openfile = open(url,'r')
+def txt_toDic(path_file):
+    openfile = open(path_file,'r')
     rDic = {}
     for line in openfile:
         dList = line.split()
