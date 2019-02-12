@@ -25,9 +25,6 @@ def student_Avg(sList):
         avg_List.append(sum_List)
     return  avg_List
 
-
-
-
 path_file = "d:\\hhs2\\file\\subjectScore.csv"
 student_List = student_Data(path_file)
 print(student_List)

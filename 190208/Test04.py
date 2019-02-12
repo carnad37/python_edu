@@ -33,7 +33,6 @@ def calculate_Avg(sList):
     avg_List=["score_avg"]
     sum_score = 0
     max = len(sList[0])
-    print(max)
     for i in range(1,max,1):
         for j in range(1,len(sList),1):
             sum_score+=int(sList[j][i])
@@ -43,6 +42,7 @@ def calculate_Avg(sList):
     return avg_List
 
 def max_and_min_student(avgList,sList):
+    #최고점과 최저점 학생의 이름 호출
     check_List = sorted(avgList[1:])
     min_index = avgList.index(check_List[0])
     max_index = avgList.index(check_List[len(check_List)-1])
@@ -50,21 +50,27 @@ def max_and_min_student(avgList,sList):
     max_student = sList[0][max_index]
     return min_student,max_student
 
-path_file = "D:\\workspace\\files\\subScore.txt"
+def print_avg_scroe(avgList,sList):
+    #모든 학생의 평균점수를 호출
+    for i in range(1,len(avgList),1):
+        name = sList[0][i]
+        avg = avgList[i]
+        print("%s의 평균점수는 %d이다"%(name,avg))
+
+path_file = "d:\\hhs2\\file\\subjectScore.csv"
 student_pre_List = student_Data(path_file)
 student_List = array_List(student_pre_List)
 student_avg_List=calculate_Avg(student_List)
+print_avg_scroe(student_avg_List,student_List)
 (min_name,max_name)=max_and_min_student(student_avg_List,student_List)
-print(student_List)
-print(student_avg_List)
+
+print("")
 print("평균 최저점의 학생은 %s이다"%min_name)
 print("평균 최고점의 학생은 %s이다"%max_name)
-
 
 #각 학생들의 평균 점수.
 #평균점수가 가장 높은 학생의 이름.
 #평균점수가 가장 낮은 학생의 이름.
-
 
 #원하는 과목을 name key의 val에서 서치. 그 값을 대입.
 #각 학생의 평균 점수 구하기
