@@ -40,6 +40,9 @@ class StudentScoreData:
 ssd = StudentScoreData("d:\\hhs2\\file\\subjectScore.csv")
 ssd.print_avg_scroe()
 ssd.score_sort_student()
+listd =[]
+listd.append(ssd)
+print(listd)
 print(ssd.avg_List)
 print("")
 print("가장 점수가 높은 학생의 이름은 %s이다."%ssd.max_name)
