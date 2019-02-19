@@ -11,19 +11,19 @@ file_patH = "D:\\hhs2\\file\\userdata.txt"
 클래스에서 객체로 생성해, list에 추가.
 """
 
-class userData:
-    def __init__(self,id,pw,name,email):
-        self.id = id
-        self.pw = pw
-        self.name = name
-        self.email = email
-
-
-    def loginSystem(self,id,pw):
-        self.id
-    def lastLoginTime(self):
-        now = time.localtime()
-        self.lastlogin = "%04d-%02d-%02d %02d:%02d:%02d" % (now.tm_year, now.tm_mon, now.tm_mday, now.tm_hour, now.tm_min, now.tm_sec)
+# class userData:
+#     def __init__(self,id,pw,name,email):
+#         self.id = id
+#         self.pw = pw
+#         self.name = name
+#         self.email = email
+#
+#
+#     def loginSystem(self,id,pw):
+#         self.id
+def lastLoginTime(self):
+    now = time.localtime()
+    self.lastlogin = "%04d-%02d-%02d %02d:%02d:%02d" % (now.tm_year, now.tm_mon, now.tm_mday, now.tm_hour, now.tm_min, now.tm_sec)
 
 #signSystem을 통해 userData의 객체를 생성해 리스트에 추가한다.
 def signSystem():
