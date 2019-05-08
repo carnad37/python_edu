@@ -12,6 +12,6 @@ num02 = int(input("두번째 수를 입력해주세요: "))
 num03 = int(input("세번째 수를 입력해주세요: "))
 
 max = selectNum(num01,num02)
-max = selectNum(min, num03)
+max = selectNum(max, num03)
 
 print(min)
