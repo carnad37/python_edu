@@ -10,7 +10,7 @@ print(retVal)
 retVal = divmod(7,3)
 print(retVal)
 
-#잘모르겠다.??
+#iterator를 입력받아 인덱스 값을 포함하는 enumerate객체를 리턴해준다.
 for i, name in enumerate(['body','foo','bar']):
     print(i,name)
 
