@@ -1,5 +1,5 @@
 def student_Data(path_file):
-    #첫번째 요소는 Key, 이후요소는 튜플로 묶어서 valuse로 만들기.
+    #첫번째 요소는 Key, 이후요소는 튜플로 묶어서 values로 만들기.
     readfile = open(path_file,'r')
     checkList = []
     sumTuple = ()
